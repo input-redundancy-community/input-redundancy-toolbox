@@ -3,11 +3,9 @@
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2023a%2B-blue.svg)](https://www.mathworks.com/products/matlab.html)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-<<<<<<< HEAD
+
 This MATLAB toolbox provides structural analysis and geometric control tools for input-redundant state-space systems.
-=======
-This MATLAB toolbox provides structural analysis tools for input-redundant systems.
->>>>>>> b117dfa08a187c1d3426a89de0eea0e457b59496
+
 
 This code accompanies the concepts detailed in the paper: 
 > J. Kreiss and J.-F. Trégouët, “Input redundancy: Definitions, taxonomy, characterizations and application to over-actuated systems,” *Systems & Control Letters*, vol. 158, p. 105060, Dec. 2021. [DOI link](https://doi.org/10.1016/j.sysconle.2021.105060)
@@ -16,11 +14,8 @@ This code accompanies the concepts detailed in the paper:
 
 ## 🎯 Scope and Features
 
-<<<<<<< HEAD
 The toolbox implements foundational algorithms from geometric control theory, offering an API using standard MATLAB conventions.
-=======
-This toolbox focuses on the fundamental structural properties of a linear system.
->>>>>>> b117dfa08a187c1d3426a89de0eea0e457b59496
+
 
 ### Core Geometric Subspaces & Operations
 * **$V^*$ (`vstar`)**: Computes the weakly unobservable subspace (controlled invariant). Optionally returns the associated friend matrix $F$.
@@ -47,13 +42,9 @@ This toolbox focuses on the fundamental structural properties of a linear system
 
 ---
 
-<<<<<<< HEAD
 ## ⚙️ Installation & Quick Start
 
 1. Clone the repository:
    ```bash
    git clone [https://github.com/kreiss1/control-allocation-toolbox.git](https://github.com/kreiss1/control-allocation-toolbox.git)
-=======
-```matlab
-git clone https://github.com/input-redundancy-community/input-redundancy-toolbox.git
->>>>>>> b117dfa08a187c1d3426a89de0eea0e457b59496
+
