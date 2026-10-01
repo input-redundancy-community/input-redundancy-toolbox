@@ -25,4 +25,4 @@ For solving the actual control allocation problem using constrained optimization
 ## ⚙️ Installation
 
 ```matlab
-git clone [https://github.com/kreiss1/control-allocation-toolbox.git](https://github.com/kreiss1/control-allocation-toolbox.git)
+git clone https://github.com/kreiss1/control-allocation-toolbox.git
