@@ -3,14 +3,14 @@
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2023a%2B-blue.svg)](https://www.mathworks.com/products/matlab.html)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-This MATLAB toolbox provides structural analysis tools for input-redundant state-space systems.
+This MATLAB toolbox provides structural analysis tools for input-redundant systems.
 
 This code accompanies the concepts detailed in the paper: 
 > J. Kreiss and J.-F. Trégouët, “Input redundancy: Definitions, taxonomy, characterizations and application to over-actuated systems,” *Systems & Control Letters*, vol. 158, p. 105060, Dec. 2021. [DOI link](https://doi.org/10.1016/j.sysconle.2021.105060)
 
 ## 🎯 Scope and Features
 
-This toolbox focuses on the fundamental structural properties of the system $(A,B,C,D)$.
+This toolbox focuses on the fundamental structural properties of a linear system.
 
 ## 🔗 Related Tools
 
