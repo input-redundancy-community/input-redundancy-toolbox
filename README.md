@@ -20,7 +20,7 @@ The toolbox implements foundational algorithms from geometric control theory, of
 ### Core Geometric Subspaces & Operations
 * **$\mathcal{V}^*$ (`vstar`)**: Computes the weakly unobservable subspace (controlled invariant). Optionally returns the associated friend matrix $F$.
 * **$\mathcal{S}^*$ (`sstar`)**: Computes the supremal conditioned invariant subspace via system duality.
-* **$\mathcal{R}^*$ (`rstar`)**: Computes the supremal reachability/controlled invariant subspace ($R^* = V^* \cap S^*$). Optionally returns its friend matrix $F$.
+* **$\mathcal{R}^*$ (`rstar`)**: Computes the supremal reachability/controlled invariant subspace ($\mathcal{R}^* = \mathcal{V}^* \cap \mathcal{S}^*$). Optionally returns its friend matrix $F$.
 * **Intersections (`ints`)**: Computes the orthonormal basis of the intersection of two subspaces.
 * **Inverse Images (`invt`)**: Computes the pull-back (inverse image) $B^{-1}\mathcal{V}$ under a linear mapping.
 * **Friend Matrices (`effe`)**: Computes state feedback matrices $F$ ensuring controlled invariance and output-nulling invisibility.
@@ -46,5 +46,5 @@ The toolbox implements foundational algorithms from geometric control theory, of
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/kreiss1/control-allocation-toolbox.git](https://github.com/kreiss1/control-allocation-toolbox.git)
+   git clone https://github.com/input-redundancy-community/input-redundancy-toolbox.git
 
