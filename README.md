@@ -14,7 +14,7 @@ This toolbox focuses on the fundamental structural properties of the system $(A,
 
 ## 🔗 Related Tools
 
-For solving the actual control allocation problem using constrained optimization algorithms, we recommend the [Quadratic Control Allocation Toolbox (QCAT)](http://www.control.isy.liu.se/~ola/ControlAllocationToolbox/) developed by Ola Härkegård.
+For solving the actual control allocation problem using constrained optimization algorithms, we recommend the [Quadratic Control Allocation Toolbox (QCAT)](https://fr.mathworks.com/matlabcentral/fileexchange/4609-qcat) developed by Ola Härkegård.
 
 ## 📁 Project Structure
 
@@ -25,4 +25,4 @@ For solving the actual control allocation problem using constrained optimization
 ## ⚙️ Installation
 
 ```matlab
-git clone [https://github.com/TonPseudo/input-redundancy-toolbox.git](https://github.com/kreiss1/control-allocation-toolbox.git)
+git clone [https://github.com/kreiss1/control-allocation-toolbox.git](https://github.com/kreiss1/control-allocation-toolbox.git)
