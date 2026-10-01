@@ -42,6 +42,20 @@ The toolbox implements foundational algorithms from geometric control theory, of
 
 ---
 
+## 📖 How to Cite - BibteX
+
+If you use this toolbox in your research or academic work, please cite it as follows:
+
+```bibtex
+@software{Kreiss2026_InputRedundancyToolbox,
+  author = {Kreiss, Jérémie and Trégouët, Jean-François},
+  title = {Input Redundancy Toolbox for MATLAB},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/input-redundancy-community/input-redundancy-toolbox}}
+}
+
 ## ⚙️ Installation & Quick Start
 
 1. Clone the repository:
