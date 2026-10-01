@@ -55,6 +55,7 @@ If you use this toolbox in your research or academic work, please cite it as fol
     journal = {GitHub repository},
     howpublished = {\url{https://github.com/input-redundancy-community/input-redundancy-toolbox}}
   }
+  ```
 
 ## ⚙️ Installation & Quick Start
 
