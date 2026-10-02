@@ -56,9 +56,19 @@ If you use this toolbox in your research or academic work, please cite it as fol
   }
   ```
 
-## ⚙️ Installation & Quick Start
+## Installation
 
-1. Clone the repository:
+### Option 1: MATLAB Add-On (Recommended)
+The easiest way to install the toolbox is via the MATLAB Add-On package:
+
+1. Go to the [Releases](../../releases/latest) page of this repository.
+2. Download the `input-redundancy-toolbox.mltbx` file attached to the latest release.
+3. Double-click the downloaded file, or drag and drop it directly into your MATLAB workspace.
+4. Click **Install**. The `+geometric` namespace and core functions will automatically be added to your MATLAB path.
+
+### Option 2: Clone from Source (For Developers)
+If you wish to modify the code or contribute to the toolbox:
+
+1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/input-redundancy-community/input-redundancy-toolbox.git
-
+   git clone [https://github.com/VOTRE-USERNAME/input-redundancy-toolbox.git](https://github.com/VOTRE-USERNAME/input-redundancy-toolbox.git)
