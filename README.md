@@ -18,11 +18,11 @@ The toolbox implements foundational algorithms from geometric control theory, of
 
 
 ### Core Geometric Subspaces & Operations
-* $\mathcal{V}^\ast$ **(`vstar`)**: Computes the weakly unobservable subspace (controlled invariant). Optionally returns the associated friend matrix $F$.
-* $\mathcal{S}^\ast$ **(`sstar`)**: Computes the supremal conditioned invariant subspace via system duality.
-* $\mathcal{R}^\ast$ **(`rstar`)**: Computes the supremal reachability/controlled invariant subspace ($\mathcal{R}^\ast = \mathcal{V}^\ast \cap \mathcal{S}^\ast$). Optionally returns its friend matrix $F$.
+* **𝒱\*** (`vstar`): Computes the weakly unobservable subspace (controlled invariant). Optionally returns the associated friend matrix $F$.
+* **𝒮\*** (`sstar`): Computes the supremal conditioned invariant subspace via system duality.
+* **ℛ\*** (`rstar`): Computes the supremal reachability/controlled invariant subspace (ℛ\* = 𝒱\* ∩ 𝒮\*). Optionally returns its friend matrix $F$.
 * **Intersections (`ints`)**: Computes the orthonormal basis of the intersection of two subspaces.
-* **Inverse Images (`invt`)**: Computes the pull-back (inverse image) $B^{-1}\mathcal{V}$ under a linear mapping.
+* **Inverse Images (`invt`)**: Computes the pull-back (inverse image) $B^{-1}𝒱$ under a linear mapping.
 * **Friend Matrices (`effe`)**: Computes state feedback matrices $F$ ensuring controlled invariance and output-nulling invisibility.
 
 ### System Analysis & Redundancy Tools
