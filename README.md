@@ -40,7 +40,6 @@ The toolbox implements foundational algorithms from geometric control theory, of
 * `examples/`: Scripts demonstrating system decomposition, input redundancy checks, and annihilator extraction.
 * `init_toolbox.m`: Initialization script to add the required directories to your MATLAB path.
 
----
 
 ## 📖 How to Cite - BibteX
 
