@@ -71,4 +71,4 @@ If you wish to modify the code or contribute to the toolbox:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/VOTRE-USERNAME/input-redundancy-toolbox.git](https://github.com/VOTRE-USERNAME/input-redundancy-toolbox.git)
+   git clone https://github.com/input-redundancy-community/input-redundancy-toolbox.git
