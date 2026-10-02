@@ -82,9 +82,9 @@ function [sys_decomp, T, U, F] = irDecomp(varargin)
     T = T(:, any(T, 1));           % Remove empty columns
 
     % 5. Input transformation
-    U0 = ker([B; D]);              % Basis of the kernel of B and D
-    U1 = invt(B, T1);              % Basis of the intersection of B^{-1}R* and ker(D) 
-    U2 = ker([U0'; U1']);          % Complete the input basis
+    U0 = null([B; D]);              % Basis of the kernel of B and D
+    U1 = geometric.invt(B, T1);              % Basis of the intersection of B^{-1}R* and ker(D) 
+    U2 = null([U0'; U1']);          % Complete the input basis
     U = [U0, U1, U2];              % Input transformation
     U = U(:, any(U, 1));           % Remove empty columns
 

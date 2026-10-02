@@ -31,6 +31,7 @@ function init_toolbox()
         addpath(examples_dir);
         disp('--> Added "examples" directory to path.');
     end
+    savepath;
 
     disp('--------------------------------------------------');
     disp(' Input Redundancy Toolbox initialized successfully.');
