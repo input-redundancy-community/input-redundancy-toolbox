@@ -2,6 +2,7 @@
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2023a%2B-blue.svg)](https://www.mathworks.com/products/matlab.html)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23121420.svg)](https://doi.org/10.5281/zenodo.23121420)
 
 
 This MATLAB toolbox provides structural analysis and geometric control tools for input-redundant state-space systems.
@@ -41,20 +42,31 @@ The toolbox implements foundational algorithms from geometric control theory, of
 * `init_toolbox.m`: Initialization script to add the required directories to your MATLAB path.
 
 
-## 📖 How to Cite - BibteX
+## 📖 How to Cite
 
-If you use this toolbox in your research or academic work, please cite it as follows:
+If you use this toolbox in your research or academic work, please cite it using the Zenodo DOI:
 
-  ```bibtex
-  @software{Kreiss2026_InputRedundancyToolbox,
-    author = {Kreiss, Jérémie and Trégouët, Jean-François},
-    title = {Input Redundancy Toolbox for MATLAB},
-    year = {2026},
-    publisher = {GitHub},
-    journal = {GitHub repository},
-    howpublished = {\url{https://github.com/input-redundancy-community/input-redundancy-toolbox}}
-  }
-  ```
+```bibtex
+@software{jeremie_kreiss_2026_23121420,
+  author       = {Jérémie Kreiss},
+  title        = {input-redundancy-community/input-redundancy-
+                   toolbox: v1.1.2- Release with improvments of
+                   numerical computation
+                  },
+  month        = oct,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.1.2},
+  doi          = {10.5281/zenodo.23121420},
+  url          = {https://doi.org/10.5281/zenodo.23121420},
+  swhid        = {swh:1:dir:a11003d9d7838d4402f93ba7407d318718164494
+                   ;origin=https://doi.org/10.5281/zenodo.23121419;vi
+                   sit=swh:1:snp:72ef142b596b9ff08488e96a34b00af2d0ec
+                   4886;anchor=swh:1:rel:0c10f1e806051c5e4cc05b8eb6fa
+                   7a7ec9f42ebf;path=input-redundancy-community-
+                   input-redundancy-toolbox-641bdda
+                  },
+}
 
 ## Installation
 
@@ -72,3 +84,4 @@ If you wish to modify the code or contribute to the toolbox:
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/input-redundancy-community/input-redundancy-toolbox.git
+
