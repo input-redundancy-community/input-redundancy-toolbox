@@ -78,20 +78,31 @@ function [sys_decomp, T, U, F] = irDecomp(varargin)
 
     % 4. State transformation (Triangular decomposition)
     T2 = null(T1');                % Complete the state space basis
-    T = [T1, T2];                  % State transformation
-    T = T(:, any(T, 1));           % Remove empty columns
+    T = [T1, T2];                  % State transformation (orthonormal matrix)
 
     % 5. Input transformation
-    U0 = null([B; D]);              % Basis of the kernel of B and D
-    U1 = geometric.invt(B, T1);              % Basis of the intersection of B^{-1}R* and ker(D) 
-    U2 = null([U0'; U1']);          % Complete the input basis
-    U = [U0, U1, U2];              % Input transformation
-    U = U(:, any(U, 1));           % Remove empty columns
+    U0 = null([B; D]);                             
+    
+    % Basis of the intersection of B^{-1}R* and ker(D)
+    U1_full = geometric.ints(geometric.invt(B, T1), null(D)); 
+    
+    % Extract only the part of U1_full that is orthogonal to U0
+    if isempty(U0)
+        U1 = U1_full;
+    else
+        % Intersection of U1_full and the orthogonal complement of U0
+        U1 = geometric.ints(U1_full, null(U0')); 
+    end
+    
+    % Complete the input basis with the remaining orthogonal space
+    U2 = null([U0, U1]'); 
+    
+    U = [U0, U1, U2]; % This is now guaranteed to be exactly m x m and orthogonal
 
     % 6. Resulting state space
-    % Using left division (T \ ...) instead of inv(T) for numerical stability
-    A_F_bar = T \ ((A + B * F) * T);
-    B_bar   = T \ (B * U);
+    % T is orthonormal by construction, so inv(T) == T'
+    A_F_bar = T' * (A + B * F) * T;
+    B_bar   = T' * B * U;
     C_F_bar = (C + D * F) * T;
     D_bar   = D * U;
 

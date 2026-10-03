@@ -80,11 +80,11 @@ function sys_ann = annihilator(varargin)
     % 4. Compute the image inverse B^{-1}R*
     B_inv_R = geometric.invt(B, R);
 
-    % 5. Restriction of matrices to R* and B^{-1}R* subspaces
+   % 5. Restriction of matrices to R* and B^{-1}R* subspaces
     A_cl = A + B * F;
 
-    An = R \ (A_cl * R);
-    Bn = B * B_inv_R;
+    An = R' * A_cl * R;
+    Bn = R' * B * B_inv_R; 
     Cn = F * R;
     Dn = B_inv_R;
 
