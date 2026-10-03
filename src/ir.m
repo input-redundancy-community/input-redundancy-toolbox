@@ -28,6 +28,22 @@ function [kind, rho, nu] = ir(varargin)
 %       When used without output arguments, it prints the classification
 %       and degrees of redundancy to the console.
 %
+%   Example:
+%       % 1. Define state-space matrices with a duplicated input
+%       A = [-1  1; 
+%             0 -2];
+%       B = [1  1; 
+%            0  0];
+%       C = [1  0];
+%       D = [0  0];
+%       
+%       % 2. Check input redundancy using matrices (outputs kind, rho, nu)
+%       [kind, rho, nu] = ir(A, B, C, D);
+%       
+%       % 3. Check input redundancy using a sys object
+%       sys = ss(A, B, C, D);
+%       ir(sys); % Called without outputs, it prints the result to the console
+%
 %   Author: JK
 
     % 1. Input parsing

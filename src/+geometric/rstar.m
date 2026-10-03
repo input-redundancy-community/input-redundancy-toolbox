@@ -20,6 +20,24 @@ function [Rs, F] = rstar(varargin)
 %       - Rs : Orthonormal basis matrix of the supremal reachability subspace R*
 %       - F  : Friend matrix for R*
 %
+%   Example:
+%       A = [-1  1  0; 
+%             0 -2  1; 
+%             0  0 -3];
+%       B = [0  0; 
+%            1  0; 
+%            0  1];
+%       C = [1  0  0];
+%       D = [0  0];
+%       
+%       % 2. Compute only the supremal reachability subspace R*
+%       Rs = rstar(A, B, C, D);
+%       
+%       % 3. Compute R* and its friend matrix F using a sys object
+%       sys = ss(A, B, C, D);
+%       [Rs, F] = rstar(sys);
+%       
+%
 %   Author: JK
 
     % 1. Input parsing

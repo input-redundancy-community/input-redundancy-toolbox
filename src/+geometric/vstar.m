@@ -22,6 +22,24 @@ function [V_star, F] = vstar(varargin)
 %       - V_star : Orthonormal basis matrix of the weakly unobservable subspace
 %       - F      : Friend matrix such that (A + B*F)*V_star subset V_star and (C + D*F)*V_star = 0
 %
+%   Example:
+%       % 1. Define state-space matrices
+%       A = [-1  1  0; 
+%             0 -2  1; 
+%             0  0 -3];
+%       B = [0; 
+%            1; 
+%            0];
+%       C = [1  0  0];
+%       D = 0;
+%       
+%       % 2. Compute the weakly unobservable subspace V*
+%       V_star = vstar(A, B, C, D);
+%       
+%       % 3. Compute V* and its friend matrix F using a sys object
+%       sys = ss(A, B, C, D);
+%       [V_star, F] = vstar(sys);
+%
 %   Author: JK
 
     % 1. Input parsing

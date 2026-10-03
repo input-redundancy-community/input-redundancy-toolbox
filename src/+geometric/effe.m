@@ -19,6 +19,26 @@ function F = effe(varargin)
 %   Outputs:
 %       - F : State feedback matrix (size m-by-n)
 %
+%   Example:
+%       % 1. Define a simple 2D system
+%       A = [1 1; 1 2];
+%       B = [0; 1];
+%       C = [1 1];
+%       D = 1;
+%       
+%       % 2. Define a subspace V (span of the first basis vector)
+%       V = [1; 0];
+%       
+%       % 3. Pure controlled invariance
+%       F_inv = effe(A, B, V);
+%       
+%       % 4. Controlled invariance + output-nulling
+%       F_null = effe(A, B, C, D, V);
+%       
+%       % 5. Using the sys object signature
+%       sys = ss(A, B, C, D);
+%       F_sys = effe(sys, V);
+%
 %   Author: JK
 
     % 1. Clean input parsing

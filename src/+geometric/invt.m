@@ -22,7 +22,6 @@ function V_inv = invt(B, V)
 %       V = [1; 0];
 %       V_inv = geometric.invt(B, V);
 %
-%   See also: geometric.ints, null, orth
 %
 %   Author: JK
 

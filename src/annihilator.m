@@ -21,6 +21,24 @@ function sys_ann = annihilator(varargin)
 %   Outputs:
 %       - sys_ann : State-space model representing the annihilator
 %
+%   Example:
+%       % 1. Define state-space matrices
+%       A = [-1  1  0; 
+%             0 -2  1; 
+%             0  0 -3];
+%       B = [0  0; 
+%            1  0; 
+%            0  1];
+%       C = [1  0  0];
+%       D = [0  0];
+%       
+%       % 2. Compute the annihilator system directly from matrices
+%       sys_ann = annihilator(A, B, C, D);
+%       
+%       % 3. Compute the annihilator system using a sys object
+%       sys = ss(A, B, C, D);
+%       sys_ann_sys = annihilator(sys);
+%
 %   Author: JK
 
     % 1. Unified input parsing & normalization to ss object

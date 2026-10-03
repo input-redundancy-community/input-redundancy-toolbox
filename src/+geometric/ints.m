@@ -22,7 +22,6 @@ function V_int = ints(V1, V2)
 %       V2 = [1 1; 0 1; 0 0];
 %       V_int = geometric.ints(V1, V2);
 %
-%   See also: geometric.invt, null, orth
 %
 %   Author: JK
 

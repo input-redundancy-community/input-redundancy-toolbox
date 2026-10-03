@@ -18,6 +18,23 @@ function S_star = sstar(varargin)
 %   Outputs:
 %       - S_star : Orthonormal basis matrix of the supremal conditioned invariant subspace
 %
+%   Example:
+%       A = [-1  1  0; 
+%             0 -2  1; 
+%             0  0 -3];
+%       B = [0; 
+%            1; 
+%            0];
+%       C = [1  0  0];
+%       D = 0;
+%       
+%       % 2. Compute the supremal conditioned invariant subspace S*
+%       S_star = sstar(A, B, C, D);
+%       
+%       % 3. Alternatively, compute S* using a sys object
+%       sys = ss(A, B, C, D);
+%       S_star_sys = sstar(sys);
+%
 %   Author: JK
 
     % 1. Input parsing
